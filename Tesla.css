@@ -13,7 +13,6 @@ body {
 }
 
 header div img {
-
     width: 120px;
     height: 15px;
     cursor: pointer;
@@ -263,10 +262,21 @@ object-position: center;
     }
 }
 
+@keyframes invn {
+    0%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .blur {
     position: absolute;
     width: 100%;
-    display: block;
+    display: none;
     height: 100vh;
     z-index: 99;
     transition: all 1s;
@@ -274,16 +284,26 @@ object-position: center;
     background-color: #393c416e;
 }
 
+.blur.active {
+    display: block;
+}
+
 .hiddenSide {
     position: absolute;
     right: 0;
     width: 310px;
-    transform: translateX(0);
+    transform: translateX(320px);
     transition: all 1.2s;
     z-index: 100;
     height: 100%;
     overflow: scroll;
+    opacity: 0;
     background-color: white;
+}
+
+.hiddenSide.active {
+   transform: translateX(0); 
+   opacity: 1;
 }
 
 #marker {
