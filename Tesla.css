@@ -76,49 +76,49 @@ z-index: 5;
 
 .navEl a:nth-child(2):hover~.hover {
     opacity: 1;
-    left: 90px;
+    left: 100px;
     width: 80px;
 }
 
 .navEl a:nth-child(3):hover~.hover {
     opacity: 1;
-    left: 175px;
+    left: 195px;
     width: 85px;
 }
 
 .navEl a:nth-child(4):hover~.hover {
     opacity: 1;
-    left: 266px;
+    left: 280px;
     width: 80px;
 }
 
 .navEl a:nth-child(5):hover~.hover {
     opacity: 1;
-    left: 355px;
+    left: 369px;
     width: 95px;
 }
 
 .navEl a:nth-child(6):hover~.hover {
     opacity: 1;
-    left: 460px;
+    left: 475px;
     width: 100px;
 }
 
 .navEl a:nth-child(7):hover~.hover {
     opacity: 1;
-    left: 733px;
+    left: 745px;
     width: 60px;
 }
 
 .navEl a:nth-child(8):hover~.hover {
     opacity: 1;
-    left: 805px;
+    left: 815px;
     width: 75px;
 }
 
 .navEl a:nth-child(9):hover~.hover {
     opacity: 1;
-    left: 890px;
+    left: 905px;
     width: 60px;
 }
 
@@ -160,3 +160,129 @@ object-position: center;
     height: 40vh;
     align-items: center;
 }
+
+.head h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(61, 61, 61);
+    padding-bottom: 5px;
+}
+
+.head span {
+    color: rgb(53, 53, 53);
+    font-size: 17px;
+}
+.head a {
+    color: rgb(53, 53, 53);
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-position: under;
+
+}
+
+.head a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.login {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.login div {
+    display: flex;
+    justify-content: center;
+}
+
+.btn div {
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#order {
+    background-color: #393c41;
+    color: white;
+}
+
+#invn {
+    background-color: whitesmoke;
+    color: rgb(82, 81, 81);
+}
+
+#order,
+#invn {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blank {
+    height: 70px;
+}
+
+.login .arrow {
+    height: 60px;
+    font-size: 25px;
+    color: rgb(75, 75, 75);
+    animation: updown 1.5s ease infinite;
+}
+
+@keyframes updown {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(5px);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(5px);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    z-index: 99;
+    transition: all 1s;
+    backdrop-filter: blur(4px);
+    background-color: #393c416e;
+}
+
+.hiddenSide {
+    position: absolute;
+    right: 0;
+    width: 310px;
+    transform: translateX(0);
+    transition: all 1.2s;
+    z-index: 100;
+    height: 100%;
+    overflow: scroll;
+    background-color: white;
+}
+
+
